@@ -6,9 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/syles.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
     <link href=" https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css" rel="stylesheet">
 </head>
@@ -17,6 +16,7 @@
     <div class="container">
     
     <span class="big-circle"></span>
+    <span class="title-circle"></span>
     
     
     <div class="form">
@@ -29,16 +29,23 @@
              <div class="info">
                <div class="information">
                  <img src="" class="icon" alt="" />
-                 <p>treichville, macher samsung</p>
+                 <p>ou nous somme treichville, macher samsung <br>a cote du palais des sport</p>
                </div>
                <div class="information">
                  <img src="" class="icon" alt="" />
-                 <p>lorem@ipsum.com</p>
+                 <p>philtechnologie@gmail.com</p>
                </div>
                <div class="information">
-                 <img src="" class="icon" alt="" />
-                 <p>01-00-00-58-48</p>
+                 <a href="https://facebook.com/philtechnologie" target="_blank"><i class='bx bxl-facebook'></i></a>
+                  <a href=""><i class='bx bxl-whatsapp'></i></a>
+                  <a href=""><i class='bx bxl-tiktok'></i></a>
                </div>
+             </div>
+             <div class="information">
+              
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.709834041204!2d-4.008738026461073!3d5.30789318609773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebe48953fb13%3A0x279b6bfd6996ce43!2sPHILTECHNOLOGIE!5e0!3m2!1sfr!2sci!4v1748442374190!5m2!1sfr!2sci"
+                width="320px" height="230px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
              </div>
             </div>   
 
@@ -46,37 +53,79 @@
                 <span class="circle one"></span> 
                 <span class="circle two"></span>
 
-                <form action="index.html">
-                    <h3 class="titre">Contact nous</h3>
-
-                    <div class="input-container ">
-                        <input type="text" name="name" class="input">
-                        <label for="">nom d'utilisateur</label>
-                        <!-- <span>nom d'utilisateur</span> -->
-                    </div>
-
-                    <div class="input-container ">
-                        <input type="email" name="email" class="input">
-                        <label for="">email</label>
-                        <!-- <span>email</span> -->
-                    </div>
-
-                    <div class="input-container ">
-                        <input type="tel" name="numero" class="input">
-                        <label for="">numero</label>
-                        <!-- <span>numero</span> -->
-                    </div>
-
-                    <div class="input-container ">
-                        <textarea name="Message" class="input"></textarea>
-                        <label for="">Message</label>
-                        <!-- <span>Message</span> -->
-                    </div>
-                    <input type="submit" value="send" class="btn">
-                </form>
+                
+  <form class="form-con">
+    <div class="input-container">
+      <input type="text" id="nom" required placeholder=" ">
+      <label for="nom">Nom</label>
     </div>
+    <div class="input-container">
+      <input type="email" id="email" required placeholder=" ">
+      <label for="email">Email</label>
+    </div>
+    <div class="input-container">
+      <input type="password" id="motdepasse" required placeholder=" ">
+      <label for="motdepasse">Mot de passe</label>
     </div>
 
+    <div class="input-container">
+      <textarea></textarea>
+      <label for="message">Message</label>
+    </div>
+    <button type="submit" class="send">Envoyer</button>
+  </form>
+  </div>
+
+
+                
+      <div id="popus" class="popus">
+
+        <div id="message">
+          <span id="close">&times;</span>
+          <h1>Merci d'avoir contacter Phil tech !</h1>
+          <p>Pour plus d'information veillez contacter
+            notre numero whatsapp,
+            Merci et a bientot.</P>
+        </div>
+      </div>          
+    </div>
+
+    <script>
+
+      // const form = document.querySelector("form");
+      // // const input = document.querySelectorAll(".input")
+      // let btn = document.getElementById("btn");
+      // let close = document.getElementById("close");
+      // let popus = document.getElementById("popus");
+
+      // form.addEventListener("submit", function (event) {
+        
+      //   event.preventDefault();
+        
+      //   if(form.checkValidity()){
+      //     popus.style.display = "block";
+      //   }
+        
+      //   else{
+      //     popus.style.display = "none";
+      //     alert("veiller remplir tout les champ avant de valider");
+      //   }
+        
+        
+      //   close.onclick = function() {
+      //     popus.style.display = "none"
+      //   };
+        
+      //   window.onclick = function (event) {
+      //     if (event.target == popus) {
+      //       popus.style.display = "none"
+      //     }
+      //   };
+        
+      // }); 
+      
+
+    </script>
     <script src="/script.js"></script>
 </body>
 </html>

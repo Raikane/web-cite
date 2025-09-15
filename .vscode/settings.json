@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.proxy": {
+        "proxyUri": "http://192.168.1.10"
+    }
+}

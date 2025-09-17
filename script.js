@@ -11,26 +11,18 @@ hamburgerButton.addEventListener("click", () => {
 });
 
 
-const mousemove = document.querySelector(".mousemouve");
+// const mousemove = document.querySelector(".mousemouve");
 
-mousemove.classList.add("mouse");
-window.addEventListener("mousemove", (e) => {
- mousemove.style.left = e.pageX + "px";
- mousemove.style.top = e.pageY + "px";
+// mousemove.classList.add("mouse");
+// window.addEventListener("mousemove", (e) => {
+//  mousemove.style.left = e.pageX + "px";
+//  mousemove.style.top = e.pageY + "px";
  
 
-});
+// });
 
 
 
-
-
-const inputs = document.querySelectorAll(".input");
-
- function focusFunc () {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-};
 
  
 
